@@ -1,0 +1,7 @@
+image:
+  repository: docker.io/gcieplechowicz/globalbank-frontend
+  tag: latest
+
+service:
+  type: ClusterIP
+  port: 80
