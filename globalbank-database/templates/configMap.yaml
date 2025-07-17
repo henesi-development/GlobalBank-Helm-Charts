@@ -4,4 +4,3 @@ metadata:
   name: {{ .Chart.Name }}-config
 data:
   SPRING_DATASOURCE_URL: "jdbc:mysql://mysql-server-dev:3306/bankingapp"
-  SERVER_PORT: 8100
