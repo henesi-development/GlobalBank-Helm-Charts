@@ -6,4 +6,4 @@ mysql:
   persistence:
     enabled: true
     size: 10Gi
-    storageClass: ""
+    storageClass: "standard"
