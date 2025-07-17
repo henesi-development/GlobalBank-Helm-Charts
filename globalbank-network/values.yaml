@@ -1,0 +1,6 @@
+applications:
+  frontend: globalbank-frontend
+  backend: globalbank-backend
+
+host:
+  name: globalbank.local
