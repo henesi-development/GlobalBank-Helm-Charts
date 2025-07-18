@@ -4,8 +4,9 @@ metadata:
   name: {{ .Chart.Name }}
   annotations:
     nginx.ingress.kubernetes.io/use-regex: "true"
-    nginx.ingress.kubernetes.io/rewrite-target: /$2  # Only affects /api route below
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
 spec:
+  ingressClassName: nginx
   rules:
     - host: {{ .Values.host.name }}
       http:
@@ -18,8 +19,8 @@ spec:
                 port:
                   number: 80
 
-          - path: /
-            pathType: Prefix  # Use Prefix here instead of regex
+          - path: /?(.*)
+            pathType: Prefix
             backend:
               service:
                 name: {{ .Values.applications.frontend }}
