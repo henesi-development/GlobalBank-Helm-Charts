@@ -10,6 +10,6 @@ spec:
     app: {{ .Chart.Name }}
   ports:
     - port: 80
-      targetPort: 4200
+      targetPort: 80
       protocol: TCP
       name: http
