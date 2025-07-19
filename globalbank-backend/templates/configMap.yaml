@@ -5,3 +5,4 @@ metadata:
 data:
   SPRING_DATASOURCE_URL: "jdbc:mysql://globalbank-database:3306/bankingapp"
   SERVER_PORT: "8100"
+  SPRING_SERVER_SERVLET_CONTEXT_PATH: "/api"
