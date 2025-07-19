@@ -6,3 +6,6 @@ data:
   SPRING_DATASOURCE_URL: "jdbc:mysql://globalbank-database:3306/bankingapp"
   SERVER_PORT: "8100"
   SPRING_SERVER_SERVLET_CONTEXT_PATH: "/api"
+  INFO_APP_NAME: "globalbank-backend"
+  INFO_APP_VERSION: "@project.version@"
+  MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: "info"
