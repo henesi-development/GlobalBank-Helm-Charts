@@ -1,0 +1,17 @@
+auth:
+  existingSecret: postgresql-credentials
+  existingSecretKeys:
+    userPasswordKey: postgresql-password
+    adminPasswordKey: postgresql-postgres-password
+    replicationPasswordKey: postgresql-replication-password
+  username: devuser
+  database: bankingapp
+
+primary:
+  persistence:
+    size: 8Gi
+
+replica:
+  replicaCount: 2
+  persistence:
+    size: 8Gi
