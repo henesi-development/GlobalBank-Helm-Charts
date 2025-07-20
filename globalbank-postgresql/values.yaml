@@ -1,11 +1,12 @@
-auth:
-  existingSecret: postgresql-credentials
-  existingSecretKeys:
-    userPasswordKey: postgresql-password
-    adminPasswordKey: postgresql-postgres-password
-    replicationPasswordKey: postgresql-replication-password
-  username: devuser
-  database: bankingapp
+postgresql:
+  auth:
+    existingSecret: postgresql-credentials
+    existingSecretKeys:
+      postgresPassword: postgresql-postgres-password  # admin password key
+      replicationPassword: postgresql-replication-password
+      password: postgresql-password                   # user password key
+    username: devuser
+    database: bankingapp
 
 primary:
   persistence:
