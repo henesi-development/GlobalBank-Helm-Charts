@@ -1,0 +1,3 @@
+image:
+  repository: docker.io/gcieplechowicz/globalbank-testtool
+  tag: "0.0.1"
