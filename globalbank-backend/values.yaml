@@ -1,6 +1,6 @@
 image:
   repository: docker.io/gcieplechowicz/globalbank-backend
-  tag: "0.0.11"
+  tag: "0.0.12"
 
 service:
   type: ClusterIP
