@@ -7,4 +7,4 @@ global:
 
 postgresql:
   replicaCount: 2
-  initdbScriptsSecret: globalbank-postgresql-init
+  initdbScripts: globalbank-postgresql-init
