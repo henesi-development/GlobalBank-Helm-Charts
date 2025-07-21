@@ -1,19 +1,9 @@
 global:
   postgresql:
     database: bankingapp
-    
-postgresql:
-  database: bankingapp
-  initdbScriptsCM: globalbank-postgresql-init
-
-auth:
+    username: "devuser"
     existingSecret: globalbank-postgresql-credentials
 
-primary:
-  persistence:
-    size: 8Gi
-
-replica:
+postgresql:
   replicaCount: 2
-  persistence:
-    size: 8Gi
+  initdbScriptsSecret: globalbank-postgresql-init
