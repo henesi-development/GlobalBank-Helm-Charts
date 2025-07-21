@@ -1,8 +1,7 @@
 global:
   postgresql:
     database: bankingapp
-    username: "devuser"
-    repmgrUsername: "repuser"
+    username: devuser
     existingSecret: globalbank-postgresql-credentials
 
 postgresql:
