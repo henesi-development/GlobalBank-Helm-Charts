@@ -1,3 +1,7 @@
+global:
+  postgresql:
+    database: bankingapp
+    
 postgresql:
   database: bankingapp
   initdbScriptsCM: globalbank-postgresql-init
