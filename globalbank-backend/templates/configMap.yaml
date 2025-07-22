@@ -3,6 +3,6 @@ kind: ConfigMap
 metadata:
   name: {{ .Chart.Name }}-config
 data:
-  SPRING_DATASOURCE_URL: "jdbc:mysql://globalbank-database:3306/bankingapp"
+  SPRING_DATASOURCE_URL: "jdbc:postgresql://globalbank-postgresql-postgresql-ha-pgpool:5432/bankingapp"
   SERVER_PORT: "8100"
   SPRING_SERVER_SERVLET_CONTEXT_PATH: "/api"

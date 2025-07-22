@@ -1,9 +1,0 @@
-mysql:
-  image: mysql:8.0
-  database: bankingapp
-  user: devuser
-  port: 3306
-  persistence:
-    enabled: true
-    size: 10Gi
-    storageClass: "standard"
