@@ -1,5 +1,5 @@
 # globalbank-postgresql/values.yaml
-  postgresql-ha:
+postgresql-ha:
   global:
     postgresql:
       database: bankingapp
