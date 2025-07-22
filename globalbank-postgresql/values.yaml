@@ -1,10 +1,11 @@
-global:
+# globalbank-postgresql/values.yaml
+  postgresql-ha:
+  global:
+    postgresql:
+      database: bankingapp
+      username: bankuser
+      repmgrUsername: repmgr
+      existingSecret: globalbank-postgresql-credentials
   postgresql:
-    database: bankingapp
-    username: bankuser
-    repmgrUsername: repmgr
-    existingSecret: globalbank-postgresql-credentials
-
-postgresql:
-  replicaCount: 2
-  initdbScriptsCM: globalbank-postgresql-init
+    replicaCount: 3
+    initdbScriptsCM: globalbank-postgresql-init
