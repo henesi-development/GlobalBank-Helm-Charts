@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: {{ .Chart.Name }}-config
+  name: {{ .Chart.Name }}-cm
 data:
   SPRING_DATASOURCE_URL: "jdbc:postgresql://globalbank-postgresql-postgresql-ha-pgpool:5432/bankingapp"
   SERVER_PORT: "8100"

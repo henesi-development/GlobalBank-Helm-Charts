@@ -39,3 +39,6 @@ spec:
                 secretKeyRef:
                   name: {{ .Chart.Name }}-secret
                   key: SPRING_DATASOURCE_PASSWORD
+          envFrom:
+          - configMapRef:
+              name: {{ .Chart.Name }}-cm
