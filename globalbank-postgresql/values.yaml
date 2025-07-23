@@ -6,6 +6,13 @@ postgresql-ha:
       username: bankuser
       repmgrUsername: repmgr
       existingSecret: globalbank-postgresql-credentials
+    pggpool:
+      adminUsername: "sr_admin_user"
+      adminPassword: ""
+      srCheckUsername: "sr_check_user"
+      srCheckPassword: ""
+      existingSecret: "globalbank-postgresql-pgpool-passwd"
+
   postgresql:
     replicaCount: 3
     initdbScriptsCM: globalbank-postgresql-init
@@ -13,9 +20,9 @@ postgresql-ha:
 
   pgpool:
     enabled: true
+    srCheckDatabase: bankingapp
     numInitChildren: 64
     maxPool: 2
     connectionLifeTime: 300
     clientIdleLimit: 300
     enablePoolHba: true
-    existingSecret: globalbank-postgresql-pgpool-passwd

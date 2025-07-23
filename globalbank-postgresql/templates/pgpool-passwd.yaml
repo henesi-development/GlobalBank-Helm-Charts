@@ -4,9 +4,5 @@ metadata:
   name: {{ .Chart.Name }}-pgpool-passwd
 type: Opaque
 stringData:
-  PGPOOL_ADMIN_USERNAME: admin
-  PGPOOL_ADMIN_PASSWORD: adminpass
-  PGPOOL_SR_CHECK_USER: srcheck
-  PGPOOL_SR_CHECK_PASSWORD: srcheckpass
-  PGPOOL_HEALTH_CHECK_USER: healthcheck
-  PGPOOL_HEALTH_CHECK_PASSWORD: healthpass
+  admin-password: adminpass
+  sr-check-password: srcheckpass
