@@ -21,8 +21,8 @@ postgresql-ha:
   pgpool:
     enabled: true
     srCheckDatabase: bankingapp
-    numInitChildren: 40       # handle more client connections
-    maxPool: 4                # allow more backend connections per child
+    numInitChildren: 80       # handle more client connections
+    maxPool: 2                # allow more backend connections per child
     maxClientConn: 400        # total client connections allowed
     connectionLifeTime: 120 # seconds, adjust as needed
     clientIdleLimit: 120    # seconds
