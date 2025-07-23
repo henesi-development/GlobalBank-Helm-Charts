@@ -5,5 +5,5 @@ metadata:
 data:
   SPRING_DATASOURCE_URL: "jdbc:postgresql://globalbank-postgresql-postgresql-ha-pgpool:5432/bankingapp"
   SERVER_PORT: "8100"
-  SPRING_DATASOURCE_MAXIMUM_POOL_SIZE: "50"
+  SPRING_DATASOURCE_MAXIMUM_POOL_SIZE: "10"
   SPRING_SERVER_SERVLET_CONTEXT_PATH: "/api"
