@@ -22,7 +22,7 @@ postgresql-ha:
     enabled: true
     srCheckDatabase: bankingapp
     numInitChildren: 20      # lowered from 64 or 30
-    maxPool: 8              # number of connections per child
+    maxPool: 2              # number of connections per child
     connectionLifeTime: 120 # seconds, adjust as needed
     clientIdleLimit: 120    # seconds
     enablePoolHba: true
