@@ -9,3 +9,13 @@ postgresql-ha:
   postgresql:
     replicaCount: 3
     initdbScriptsCM: globalbank-postgresql-init
+    maxConnections: 1000
+
+  pgpool:
+    enabled: true
+    numInitChildren: 64
+    maxPool: 2
+    connectionLifeTime: 300
+    clientIdleLimit: 300
+    enablePoolHba: true
+    existingSecret: globalbank-postgresql-pgpool-passwd

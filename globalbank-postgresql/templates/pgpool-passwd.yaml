@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: {{ .Chart.Name }}-pgpool-passwd
+type: Opaque
+stringData:
+  pgpool_passwd: |
+    bankuser:SCRAM-SHA-256$4096:VK9EAGXnWKlXPkBEYbZ3mA==$6j9R+2+K/Za4ePTxu2pr8PApJ8gNHEQiLCkhEt0n3ss=
+    postgres:SCRAM-SHA-256$4096:NzUO7FVXU1AYXPu1oaRXdw==$lBTQ3NGfr9Wlj4HNdNG0RIrJk2ZHTN1cRmW2SmuMRHg=
