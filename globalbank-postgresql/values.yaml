@@ -16,7 +16,7 @@ postgresql-ha:
   postgresql:
     replicaCount: 3
     initdbScriptsCM: globalbank-postgresql-init
-    maxConnections: 300
+    maxConnections: 500
 
   pgpool:
     enabled: true
