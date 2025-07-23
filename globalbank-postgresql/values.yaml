@@ -21,8 +21,8 @@ postgresql-ha:
   pgpool:
     enabled: true
     srCheckDatabase: bankingapp
-    numInitChildren: 64
-    maxPool: 4
-    connectionLifeTime: 300
-    clientIdleLimit: 300
+    numInitChildren: 30
+    maxPool: 8
+    connectionLifeTime: 120
+    clientIdleLimit: 120
     enablePoolHba: true
