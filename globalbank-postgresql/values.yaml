@@ -10,3 +10,6 @@ postgresql:
           adminPasswordKey: "postgres-password"
           userPasswordKey: "dev-password"
           replicationPasswordKey: "replication-password"
+
+readReplicas:
+  replicaCount: 2
