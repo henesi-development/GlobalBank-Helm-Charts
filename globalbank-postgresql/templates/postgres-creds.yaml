@@ -5,5 +5,4 @@ metadata:
 type: Opaque
 data:
   postgres-password: cm9vdDE=
-  password: cm9vdDI=
   dev-password: ZGV2cGFzcw==
