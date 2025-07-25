@@ -3,6 +3,6 @@ name: globalbank-postgresql
 description: "Bitnami PostgreSQL wrapper for GlobalBank"
 version: 0.1.0
 dependencies:
-  - name: postgresql-ha
+  - name: postgresql
     version: "16.0.22"
     repository: "https://charts.bitnami.com/bitnami"

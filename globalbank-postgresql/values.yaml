@@ -1,16 +1,12 @@
 # globalbank-postgresql/values.yaml
-postgresql-ha:
+postgresql:
   global:
     postgresql:
-      database: bankingapp
-      username: bankuser
-      repmgrUsername: repmgr
-      existingSecret: globalbank-postgresql-credentials
-
-  postgresql:
-    replicaCount: 3
-    initdbScriptsCM: globalbank-postgresql-init
-    maxConnections: 1000
-
-  pgpool:
-    enabled: false
+      auth: 
+        database: bankingapp
+        username: bankuser
+        existingSecret: globalbank-postgresql-credentials
+        secretKeys:
+          adminPasswordKey: "postgres-password"
+          userPasswordKey: "dev-password"
+          replicationPasswordKey: "replication-password"
