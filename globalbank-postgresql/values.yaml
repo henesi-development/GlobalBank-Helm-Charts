@@ -6,12 +6,6 @@ postgresql-ha:
       username: bankuser
       repmgrUsername: repmgr
       existingSecret: globalbank-postgresql-credentials
-    pggpool:
-      adminUsername: "sr_admin_user"
-      adminPassword: ""
-      srCheckUsername: "sr_check_user"
-      srCheckPassword: ""
-      existingSecret: "globalbank-postgresql-pgpool-passwd"
 
   postgresql:
     replicaCount: 3
