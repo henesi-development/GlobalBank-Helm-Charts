@@ -4,9 +4,6 @@ metadata:
   name: {{ .Chart.Name }}-credentials
 type: Opaque
 data:
-  repmgr-password: cmVwLXB3ZA==
-  repmgr-username: cmVwLXB3ZA==
   postgres-password: cm9vdDE=
   password: cm9vdDI=
-  dev-user: ZGV2dXNlcg==
   dev-password: ZGV2cGFzcw==
